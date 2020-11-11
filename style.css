@@ -20,16 +20,14 @@ body {
 }
 
 .logo {
-	/*background: rgba(200, 200, 0, 0.2);*/
 	color: #EBEBEB;
-	margin-left: 3vw;
+	margin-left: 12vw;
 	text-transform: uppercase;
-	letter-spacing: 5px;
+	letter-spacing: 10px;
 	font-size: 2em;
 }
 
 .nav-links {
-	/*background: rgba(0, 200, 0, 0.2);*/
 	margin-right: 3vw;
 	display: flex;
 	justify-content: space-around;
@@ -40,12 +38,17 @@ body {
 	list-style: none;
 }
 
-.nav-links a {
+.link {
 	color: #EBEBEB;
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
-	font-size: 0.7em;
+	font-size: 0.8em;
+
+}
+
+.link-active {
+	text-decoration: underline;
 }
 
 .burger {
@@ -62,24 +65,96 @@ body {
 }
 
 .main {
-	background-color: rgba(75, 75, 75, 0.2);
 	height: 74vh;
-	width: 40vw;
+	width: 100vw;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	/*background: rgba(0, 0, 200, 0.2);*/
 }
 
-.claim {
+.gallery {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	color: black;
+	height: 74vh;
+	width: 40vw;
 	font-family: 'Poppins', sans-serif;
 	text-align: center;
 	font-size: 5em;
 	font-weight: bolder;
-	/*background: rgba(200, 0, 0, 0.2);*/
+	background: rgba(75, 75, 75, 0.2);
+	transform: translateX(-100%);
+}
+
+#claim-text1 {
+	transform: translateX(-150%);
+}
+
+#claim-space {
+	height: 10%;
+}
+
+#claim-text2 {
+	transform: translateX(-150%);
+}
+
+.link-gallery {
+	height: 74vh;
+	width: 40vw;
+}
+
+#link1-gallery {
+	background: url("assets/detailing1.jpg") no-repeat fixed center;
+	opacity: 0;
+}
+
+#link2-gallery {
+	background: url("assets/detailing2.jpg") no-repeat fixed center;
+	opacity: 0;
+}
+
+#link3-gallery {
+	background: url("assets/detailing3.jpg") no-repeat fixed center;
+	opacity: 0;
+}
+
+#link4-gallery {
+	background: url("assets/detailing4.jpg") no-repeat fixed center;
+	opacity: 0;
+}
+
+#partnership1 {
+	transform: translateX(150%);
+}
+
+#partnership2 {
+	transform: translateX(200%);
+}
+.preview {
+	position: fixed;
+	right: 0px;
+	align-self: flex-end;
+	display: flex;
+	align-items: flex-start;
+	/*justify-content: center;*/
+	color: black;
+	height: 74vh;
+	width: 60vw;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	font-size: 5em;
+	font-weight: bolder;
+	background: rgba(75, 75, 75, 0.2);
+	transform: translateX(60vw);
+}
+
+#partnerships {
+	width: 50vw;
+	position: fixed;
+	right: 0px;
+	transform: translateX(100%);
 }
 
 .space {
@@ -97,6 +172,122 @@ body {
 	text-align: center;
 	font-size: 0.5em;
 }
+
+/* CSS Animation */
+
+@keyframes previewIn {
+	from {
+		opacity: 0;
+		transform: translateX(100%);
+
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes previewOut {
+	from {
+		opacity: 1;
+		transform: translateX(0%);
+
+	}
+	to {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+}
+
+@keyframes galleryIn {
+	from {
+		opacity: 0;
+		transform: translateX(-100%);
+
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes galleryOut {
+	from {
+		opacity: 1;
+		transform: translateX(0%);
+
+	}
+	to {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes linkGalleryIn {
+	from {
+		opacity: 0;
+		transform: translateX(0%);
+
+	}
+	to {
+		opacity: 1;
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes linkGalleryOut {
+	from {
+		opacity: 1;
+		transform: translateX(-100%);
+
+	}
+	to {
+		opacity: 0;
+		transform: translateX(0%);
+	}
+}
+
+
+@keyframes partnershipIn {
+	from {
+		opacity: 0;
+		transform: translateX(200%);
+
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes partnershipOut {
+	from {
+		opacity: 1;
+		transform: translateX(0%);
+
+	}
+	to {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+}
+
+
+@keyframes logoIn {
+	from {
+		opacity: 0;
+		color: black;
+	}
+	to {
+		opacity: 1;
+		color: #EBEBEB;
+	}
+}
+
+
+/***************************************************************************************************************************************/
+/***************************************************************************************************************************************/
+
 
 /* Mobile version CSS*/
 
