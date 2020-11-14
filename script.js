@@ -208,6 +208,10 @@ const claimPreview = () => {
 }
 
 const linkGalleryPreview = () => {
+	const link1 = document.querySelector('#link1');
+	const link2 = document.querySelector('#link2');
+	const link3 = document.querySelector('#link3');
+	const link4 = document.querySelector('#link4');
 	const link1Window = document.querySelector('#link1-window');
 	const link2Window = document.querySelector('#link2-window');
 	const link3Window = document.querySelector('#link3-window');
@@ -217,24 +221,52 @@ const linkGalleryPreview = () => {
 	const link3Gallery = document.querySelector('#link3-gallery');
 	const link4Gallery = document.querySelector('#link4-gallery');
 	const main = document.querySelector('.main');
+	var gallery1 = false;
+	var gallery2 = false;
+	var gallery3 = false;
+	var gallery4 = false;
 	link1Window.addEventListener('mouseover', () => {
 		link1Gallery.style.animation = `linkGalleryIn 1s ease forwards`;
-		main.addEventListener('mouseout', () => {
+		link1.addEventListener('click', () => {
+			link1Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link2.addEventListener('click', () => {
+			link1Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link3.addEventListener('click', () => {
+			link1Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link4.addEventListener('click', () => {
 			link1Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
 	});
 	link2Window.addEventListener('mouseover', () => {
 		link2Gallery.style.animation = `linkGalleryIn 1s ease forwards`;
-		main.addEventListener('mouseout', () => {
+		link1.addEventListener('click', () => {
+			link2Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link2.addEventListener('click', () => {
+			link2Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link3.addEventListener('click', () => {
+			link2Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link4.addEventListener('click', () => {
 			link2Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
 	});
 	link3Window.addEventListener('mouseover', () => {
 		link3Gallery.style.animation = `linkGalleryIn 1s ease forwards`;
-		main.addEventListener('mouseout', () => {
+		link1.addEventListener('click', () => {
+			link3Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link2.addEventListener('click', () => {
+			link3Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link3.addEventListener('click', () => {
+			link3Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link4.addEventListener('click', () => {
 			link3Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
 	});
 	link4Window.addEventListener('mouseover', () => {
 		link4Gallery.style.animation = `linkGalleryIn 1s ease forwards`;
-		main.addEventListener('mouseout', () => {
+		link1.addEventListener('click', () => {
+			link4Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link2.addEventListener('click', () => {
+			link4Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link3.addEventListener('click', () => {
+			link4Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
+		link4.addEventListener('click', () => {
 			link4Gallery.style.animation = `linkGalleryOut 1s ease forwards`;})
 	});
 }

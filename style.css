@@ -125,13 +125,31 @@ body {
 	opacity: 0;
 }
 
+#partnerships {
+	width: 50vw;
+	position: fixed;
+	justify-content: space-between;
+	right: 0px;
+	transform: translateX(100%);
+}
+
 #partnership1 {
+	height: 100%;
+	margin: 5% 0 0 5%;
 	transform: translateX(150%);
 }
 
 #partnership2 {
+	height: 100%;
+	margin: 0% 0 3% 7%;
 	transform: translateX(200%);
 }
+
+#partnerships img {
+	height: 60%;
+	width: 60%;
+	}
+
 .preview {
 	position: fixed;
 	right: 0px;
@@ -148,13 +166,6 @@ body {
 	font-weight: bolder;
 	background: rgba(75, 75, 75, 0.2);
 	transform: translateX(60vw);
-}
-
-#partnerships {
-	width: 50vw;
-	position: fixed;
-	right: 0px;
-	transform: translateX(100%);
 }
 
 .space {
