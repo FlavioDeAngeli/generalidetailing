@@ -11,15 +11,20 @@
 <body>
 	<nav>
 		<div class="logo">
-			<h4>GENERALI DETAILING</h4>
+			<h4>G&bull;GARAGE</h4>
 		</div>
 		<!-- standard list for navigation bar -->
 		<ul class="nav-links">
-			<li class="link" id="link1" href="">Services</li>
-			<li class="link" id="link2" href="">Products</li>
-			<li class="link" id="link3" href="">Gallery</li>
-			<li class="link" id="link4" href="">About Us</li>
+			<li class="link" id="link1" href="">Servizi</li>
+			<li class="link" id="link2" href="">Prodotti</li>
+			<li class="link" id="link3" href="">Galleria</li>
+			<li class="link" id="link4" href="">Chi Siamo</li>
 		</ul>
+		<div id='social_container'>
+			<div class="social" id="facebook"></div>
+			<div class="social" id="instagram"></div>
+		</div>
+		
 		<!-- standard div block to build pure css burger logo -->
 		<div class="burger">
 			<div class="line1"></div>
@@ -36,22 +41,56 @@
 		 	<div id="claim-space"></div>
 		 	<div id="claim-text2">Our Passion</div>
 		</div>
-		<!-- <div class="gallery" id="link1-gallery" ></div>
-		<div class="gallery" id="link2-gallery" ></div>
-		<div class="gallery" id="link3-gallery" ></div>
-		<div class="gallery" id="link4-gallery" ></div> -->
+
 		<div class="preview" id="link1-window">
-			<div class="link-gallery" id="link1-gallery" ></div>
+			<div class="submenu">
+				<div id="interni">INTERNI</div>
+				<div class="link-gallery" id="link1a-gallery" ></div>
+			</div>
+			<div class="submenu">
+				<div id="esterni">ESTERNI</div>
+			</div>
 		</div>
+
 		<div class="preview" id="link2-window">
+			<div class="submenu" id="prodotti">prodotti</div>
 			<div class="link-gallery" id="link2-gallery" ></div>
 		</div>
+
 		<div class="preview" id="link3-window">
-			<div class="link-gallery" id="link3-gallery" ></div>
+			<div class="gallery_container">
+				<div id="prevBtn" onclick="event.stopPropagation()"> <img class="arrow" src="assets/left.png"> </div>
+				<div id="nextBtn" onclick="event.stopPropagation()"> <img class="arrow" src="assets/right.png"> </div>
+				<div id="top_stripe"></div>
+				<div id="bottom_stripe"></div>
+				<div class="gallery_slide">
+					<img src="assets/img16.jpeg" id="lastClone" alt="photo"> <!-- make gallery looks like infinite loop slide  -->
+					<img src="assets/img1.jpeg" alt="photo">
+					<img src="assets/img2.jpeg" alt="photo">
+					<img src="assets/img3.jpeg" alt="photo">
+					<img src="assets/img4.jpeg" alt="photo">
+					<img src="assets/img5.jpeg" alt="photo">
+					<img src="assets/img6.jpeg" alt="photo">
+					<img src="assets/img7.jpeg" alt="photo">
+					<img src="assets/img8.jpeg" alt="photo">
+					<img src="assets/img9.jpeg" alt="photo">
+					<img src="assets/img10.jpeg" alt="photo">
+					<img src="assets/img11.jpeg" alt="photo">
+					<img src="assets/img12.jpeg" alt="photo">
+					<img src="assets/img13.jpeg" alt="photo">
+					<img src="assets/img14.jpeg" alt="photo">
+					<img src="assets/img15.jpeg" alt="photo">
+					<img src="assets/img16.jpeg" alt="photo">
+					<img src="assets/img1.jpeg" id="firstClone" alt="photo"> <!-- make gallery looks like infinite loop slide  -->
+				</div>		
+			</div>
 		</div>
+
 		<div class="preview" id="link4-window">
+			<div class="submenu" id="about-us" >Descrizione azienza contatti vari breve storia</div>
 			<div class="link-gallery" id="link4-gallery" ></div>
 		</div>
+
 		<div class="gallery" id="partnerships">
 		 	<div id="partnership1"><img src="assets/colourlock.png" alt="colourlock"></div>
 		 	<div id="claim-space"></div>
