@@ -1,5 +1,5 @@
-var animation5 = false;
-var animation6 = false;
+let animation5 = false;
+let animation6 = false;
 
 const navSlide = () => {
 	const burger = document.querySelector('.burger');
@@ -33,10 +33,10 @@ const linksPreview = () => {
 	const link4Window = document.querySelector('#link4-window');
 	const partnerships = document.querySelector('#partnerships');
 	const claim = document.querySelector('#claim');
-	var animation1 = false;
-	var animation2 = false;
-	var animation3 = false;
-	var animation4 = false;
+	let animation1 = false;
+	let animation2 = false;
+	let animation3 = false;
+	let animation4 = false;
 
 	link1.addEventListener('click', () => {
 		if (animation2==true) {
