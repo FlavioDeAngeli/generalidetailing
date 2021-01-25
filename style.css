@@ -16,6 +16,7 @@ nav {
 }
 
 body {
+  background-color: black;
   background: url("assets/black_bg.jpg") no-repeat fixed center;
 }
 
@@ -28,10 +29,20 @@ a {
   display: flex;
   align-items: center;
   color: #ebebeb;
-  margin-left: 15vw;
+  margin-left: 3vw;
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 2em;
+}
+
+#logo_big {
+  display: flex;
+  align-items: center;
+  height: 60%;
+}
+
+#sublogo {
+  font-size: 1.5rem;
 }
 
 #g {
@@ -46,7 +57,7 @@ a {
   width: 40%;
 }
 
-.nav-links li {
+li {
   list-style: none;
 }
 
@@ -63,22 +74,28 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 6vw;
-  margin-right: 2vh;
+  width: 100%;
+  padding-top: 2vh;
 }
 .social {
   background-size: cover;
-  width: 4vh;
-  height: 4vh;
+  width: 8vh;
+  height: 8vh;
+}
+
+#whatsapp {
+  background-image: url("assets/whatsapp2.png");
+  opacity: 0.8;
 }
 
 #facebook {
-  background-image: url("assets/facebook.png");
+  background-image: url("assets/facebook2.png");
+  opacity: 0.8;
 }
 
 #instagram {
-  background-image: url("assets/instagram.png");
-  padding-right: 2vh;
+  background-image: url("assets/instagram1.png");
+  opacity: 0.8;
 }
 
 .link-active {
@@ -125,6 +142,11 @@ a {
   transform: translateX(-100%);
 }
 
+/* #claim {
+  border-top: 0.3vw solid #ebebeb;
+  border-bottom: 0.3vw solid #ebebeb;
+} */
+
 #claim-text1 {
   transform: translateX(-150%);
 }
@@ -140,6 +162,8 @@ a {
 .link-gallery {
   height: 80vh;
   width: 40vw;
+  border-top: 0.3vw solid #ebebeb;
+  border-bottom: 0.3vw solid #ebebeb;
 }
 
 #link2-gallery {
@@ -189,15 +213,34 @@ a {
 }
 
 #partnership1 {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 5% 0 0 5%;
+  font-size: 0.8em;
   transform: translateX(150%);
 }
 
 #partnership2 {
+  /* background-color: lightslategray; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 85%;
   height: 100%;
-  margin: 0% 0 3% 7%;
+  margin: 3% 0 3% 0%;
   transform: translateX(200%);
+  font-size: 1rem;
+}
+
+#vehicles {
+  /* background-color: limegreen; */
+  margin-right: 20%;
+  color: #ebebeb;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.3rem;
+  border-top: 0.3vw solid #ebebeb;
+  border-bottom: 0.3vw solid #ebebeb;
 }
 
 #partnerships img {
@@ -293,7 +336,7 @@ a {
   padding: 5%;
   letter-spacing: 0.1em;
   color: #ebebeb;
-  font-size: 0.6em;
+  font-size: 0.4em;
   border-right: 0.3vw solid #ebebeb;
 }
 
@@ -467,12 +510,14 @@ a {
   /* background-color: burlywood; */
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  padding: 0 3% 0 2%;
+  width: 99vw;
+  padding: 0 12% 0 12%;
   font-family: "Poppins", sans-serif;
   color: #ebebeb;
   font-size: 1rem;
   line-height: 2.5rem;
+  border-top: 0.3vw solid #ebebeb;
+  border-bottom: 0.3vw solid #ebebeb;
 }
 
 .service-block {
@@ -480,12 +525,12 @@ a {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   /* margin-bottom: 2vw; */
 }
 
 .service-block-img {
-  background-color: bisque;
+  /* background-color: bisque; */
   display: flex;
   width: 50%;
   height: 100%;
@@ -494,12 +539,12 @@ a {
 .service-block-img img {
   width: 100%;
   object-fit: cover;
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 
 .service-block-img img:hover {
-  opacity: 1;
-  zoom: 50%;
+  /* opacity: 1;
+  zoom: 50%; */
 }
 
 .service-block-text {
@@ -509,6 +554,9 @@ a {
   height: 100%;
   align-items: center;
   justify-content: center;
+  padding: 10%;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 /* ----------------------------------------- CSS Animation -----------------------------------------------------*/

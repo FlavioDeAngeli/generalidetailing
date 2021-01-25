@@ -23,6 +23,7 @@ const navSlide = () => {
 }
 
 const linksPreview = () => {
+	const link0 = document.querySelector('#link0');
 	const link1 = document.querySelector('#link1');
 	const link2 = document.querySelector('#link2');
 	const link3 = document.querySelector('#link3');
@@ -33,12 +34,60 @@ const linksPreview = () => {
 	const link4Window = document.querySelector('#link4-window');
 	const partnerships = document.querySelector('#partnerships');
 	const claim = document.querySelector('#claim');
+	
+	let animation0 = true;
 	let animation1 = false;
 	let animation2 = false;
 	let animation3 = false;
 	let animation4 = false;
 
+	link0.classList.toggle('link-active');
+
+	link0.addEventListener('click', () => {
+		// if (animation0==true) {
+		// }
+		if (animation1==true) {
+			link1.classList.toggle('link-active');
+			link1Window.style.animation = `previewOut 1s ease forwards`;
+			animation1 = !animation1;
+		}
+		if (animation2==true) {
+			link2.classList.toggle('link-active');
+			link2Window.style.animation = `previewOut 1s ease forwards`;
+			animation2 = !animation2;
+		}
+		if (animation3==true) {
+			link3.classList.toggle('link-active');
+			link3Window.style.animation = `previewOut 1s ease forwards`;
+			animation3 = !animation3;
+		}
+		if (animation4==true) {
+			link4.classList.toggle('link-active');
+			link4Window.style.animation = `previewaOut 1s ease forwards`;
+			animation4 = !animation4;
+		}
+		if (animation5==true) {
+			// partnerships.style.animation = `previewOut 1s ease forwards`;
+			animation5 = !animation5;
+		}
+		if (animation6==true) {
+			// claim.style.animation = `galleryOut 1s ease forwards`;
+			animation6 = !animation6;
+		}
+		
+			link0.classList.add('link-active');
+			// link1Window.style.animation = `previewOut 1s ease forwards`;
+			animation0==!animation0;
+			partnershipsPreview();
+			claimPreview();
+		
+	});
+
 	link1.addEventListener('click', () => {
+		
+			link0.classList.remove('link-active');
+			animation0 = !animation0;
+
 		if (animation2==true) {
 			link2.classList.toggle('link-active');
 			link2Window.style.animation = `previewOut 1s ease forwards`;
@@ -78,6 +127,10 @@ const linksPreview = () => {
 	});
 
 	link2.addEventListener('click', () => {
+
+			link0.classList.remove('link-active');
+			animation0 = !animation0;
+		
 		if (animation1==true) {
 			link1.classList.toggle('link-active');
 			link1Window.style.animation = `previewOut 1s ease forwards`;
@@ -118,6 +171,10 @@ const linksPreview = () => {
 	});
 
 	link3.addEventListener('click', () => {
+
+			link0.classList.remove('link-active');
+			animation0 = !animation0;
+		
 		if (animation1==true) {
 			link1.classList.toggle('link-active');
 			link1Window.style.animation = `previewOut 1s ease forwards`;
@@ -157,6 +214,10 @@ const linksPreview = () => {
 	});
 
 	link4.addEventListener('click', () => {
+
+			link0.classList.remove('link-active');
+			animation0 = !animation0;
+		
 		if (animation1==true) {
 			link1.classList.toggle('link-active');
 			link1Window.style.animation = `previewOut 1s ease forwards`;
