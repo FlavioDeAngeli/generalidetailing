@@ -72,30 +72,27 @@ li {
 
 #social_container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
   padding-top: 2vh;
 }
 .social {
   background-size: cover;
-  width: 8vh;
-  height: 8vh;
+  width: 6vh;
+  height: 6vh;
+  opacity: 0.8;
 }
 
 #whatsapp {
   background-image: url("assets/whatsapp2.png");
-  opacity: 0.8;
 }
 
 #facebook {
   background-image: url("assets/facebook2.png");
-  opacity: 0.8;
 }
 
 #instagram {
   background-image: url("assets/instagram1.png");
-  opacity: 0.8;
 }
 
 .link-active {
@@ -198,7 +195,7 @@ li {
 }
  */
 #link4-gallery {
-  background: url("assets/detailing4.jpg") no-repeat fixed right;
+  /* background: url("assets/detailing4.jpg") no-repeat fixed right; */
   opacity: 0;
   align-self: right;
   width: 40vw;
@@ -230,6 +227,14 @@ li {
   margin: 3% 0 3% 0%;
   transform: translateX(200%);
   font-size: 1rem;
+}
+
+#claim_small {
+  /* background-color: chartreuse; */
+  color: #ebebeb;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
 }
 
 #vehicles {
@@ -335,7 +340,6 @@ li {
   opacity: 0.8;
   padding: 5%;
   letter-spacing: 0.1em;
-  color: #ebebeb;
   font-size: 0.4em;
   border-right: 0.3vw solid #ebebeb;
 }
@@ -389,10 +393,12 @@ li {
 }
 
 #about-us {
+  /* background-color: tan; */
   display: flex;
+  flex-direction: column;
   width: 60vw;
   height: 100%;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   font-size: 1rem;
   color: #ebebeb;
@@ -401,10 +407,33 @@ li {
 }
 
 #about-us li {
+  /* background-color: rgba(20, 20, 20, 0.5); */
   font-size: 1rem;
   color: #ebebeb;
   list-style: none;
   line-height: 2.5rem;
+  width: 100%;
+}
+
+#contattaci {
+  font-size: 2rem;
+  margin: 10% 0 10% 0;
+}
+
+.google-maps {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border: 3vw solid rgba(20, 20, 20, 0.5);
+}
+
+.google-maps > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .footer {
