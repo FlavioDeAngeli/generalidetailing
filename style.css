@@ -784,6 +784,72 @@ li {
     transform: translateX(0%); /*move div left (from +100%(X))*/
   }
 
+  .logo {
+    margin-left: 25vw;
+  }
+
+  /* .space {
+    display: none;
+  } */
+
+  .main {
+    height: 74vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #claim {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 25vh;
+  }
+
+  #claim-text1 {
+    font-size: 3rem;
+  }
+
+  #claim-text2 {
+    font-size: 3rem;
+  }
+
+  #partnerships {
+    /* background-color: burlywood; */
+    width: 100vw;
+    height: 45vh;
+    align-self: flex-end;
+  }
+
+  #logo_big {
+    display: none;
+  }
+
+  #sublogo {
+    font-size: 0.8rem;
+  }
+
+  #vehicles {
+    /* background-color: aquamarine; */
+    margin-right: 20%;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    border-top: 0.5vw solid #ebebeb;
+    border-bottom: 0.5vw solid #ebebeb;
+  }
+
+  #claim_small {
+    /* background-color: chartreuse; */
+    font-size: 0.8rem;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .footer {
+    position: relative;
+  }
+
   /* CSS Animation */
 
   @keyframes navLinkFade {
