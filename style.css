@@ -76,6 +76,7 @@ li {
   width: 100%;
   padding-top: 2vh;
 }
+
 .social {
   background-size: cover;
   width: 6vh;
@@ -154,6 +155,14 @@ li {
 
 #claim-text2 {
   transform: translateX(-150%);
+}
+
+#claim-text1-mobile {
+  display: none;
+}
+
+#claim-text2-mobile {
+  display: none;
 }
 
 .link-gallery {
@@ -752,7 +761,8 @@ li {
     }
 
     .main {
-      width: 100vw;
+      width: 100%;
+      height: 100%;
       opacity: 1;
     }
 
@@ -785,40 +795,62 @@ li {
   }
 
   .logo {
-    margin-left: 25vw;
+    margin-left: 10vw;
   }
 
-  /* .space {
+  .space {
     display: none;
-  } */
+  }
 
   .main {
-    height: 74vh;
+    /* background-color: darkorange; */
+
     width: 100vw;
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: auto;
   }
 
   #claim {
+    /* background-color: darkred; */
     display: flex;
     justify-content: center;
+    align-self: flex-start;
+    margin: 5%;
     width: 100vw;
-    height: 25vh;
+    height: 16vh;
   }
 
   #claim-text1 {
-    font-size: 3rem;
+    display: none;
   }
 
   #claim-text2 {
-    font-size: 3rem;
+    display: none;
+  }
+
+  #claim-text1-mobile {
+    display: inline;
+    font-size: 2rem;
+  }
+
+  #claim-text2-mobile {
+    display: inline;
+    font-size: 2rem;
   }
 
   #partnerships {
     /* background-color: burlywood; */
+    width: 100%;
+    margin-top: 95vh;
+    justify-content: flex-start;
+  }
+
+  #partnership2 {
+    /* background-color: darkgoldenrod; */
     width: 100vw;
-    height: 45vh;
-    align-self: flex-end;
+    margin-top: -8vh;
+    flex-direction: column;
   }
 
   #logo_big {
@@ -826,29 +858,43 @@ li {
   }
 
   #sublogo {
-    font-size: 0.8rem;
+    display: none;
   }
 
   #vehicles {
     /* background-color: aquamarine; */
-    margin-right: 20%;
-    font-size: 0.8rem;
+    align-self: flex-start;
+    width: 100vw;
+    /* height: 80%; */
+    font-size: 1.2rem;
     line-height: 2rem;
     letter-spacing: 0.2rem;
     border-top: 0.5vw solid #ebebeb;
     border-bottom: 0.5vw solid #ebebeb;
   }
 
+  #contacts {
+    /* background-color: cadetblue; */
+    width: 100vw;
+    margin-top: 5%;
+    font-size: 1rem;
+  }
+
   #claim_small {
     /* background-color: chartreuse; */
-    font-size: 0.8rem;
+    font-size: 1.2srem;
     line-height: 2rem;
     letter-spacing: 0.1rem;
   }
 
-  .footer {
-    position: relative;
+  #social_container {
+    padding: 0 12% 0 12%;
+    margin: 5% 0 10% 0;
   }
+
+  /* .footer {
+    position: relative;
+  } */
 
   /* CSS Animation */
 
