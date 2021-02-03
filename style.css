@@ -147,6 +147,14 @@ li {
   display: none;
 }
 
+.service-block-text-mobile-works {
+  display: none;
+}
+
+.google-maps-mobile {
+  display: none;
+}
+
 #claim-text1 {
   transform: translateX(-150%);
 }
@@ -168,6 +176,10 @@ li {
 }
 
 #prodotti-text-mobile {
+  display: none;
+}
+
+#works_link {
   display: none;
 }
 
@@ -772,7 +784,7 @@ li {
 
     .main {
       flex-direction: column;
-      height: 300vh;
+      /* height: 300vh; */
     }
 
     nav {
@@ -805,7 +817,7 @@ li {
     }
 
     #claim {
-      background-color: rgba(235, 235, 235, 0.5);
+      background-color: rgba(240, 240, 240, 0.2);
       display: flex;
       justify-content: center;
       align-self: flex-start;
@@ -836,7 +848,7 @@ li {
       /* background-color: burlywood; */
       position: relative;
       width: 100vw;
-      height: 60vh;
+      height: 100%;
     }
 
     #partnership2 {
@@ -868,7 +880,7 @@ li {
     #contacts {
       /* background-color: cadetblue; */
       width: 100vw;
-      margin-top: 5%;
+      margin: 5% 0 4% 0;
       font-size: 1rem;
     }
 
@@ -881,7 +893,7 @@ li {
 
     #social_container {
       padding: 0 12% 0 12%;
-      margin-bottom: 10%;
+      /* margin-bottom: 15%; */
     }
 
     .servizi-mobile {
@@ -898,7 +910,7 @@ li {
 
     #interni-mobile {
       background-image: url("assets/interni-mobile.jpg");
-      margin: 5%;
+      /* margin: 5%; */
     }
 
     #esterni-mobile {
@@ -957,6 +969,10 @@ li {
       height: 50vh;
     }
 
+    .img-works {
+      height: 25vh;
+    }
+
     .service-block-text {
       display: none;
     }
@@ -971,6 +987,61 @@ li {
       color: #ebebeb;
       font-size: 2rem;
       text-align: center;
+    }
+
+    #works_link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      line-height: 40vh;
+      font-size: 1.5rem;
+      background-image: url("assets/gallery/img2_full.jpeg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    #works_link:hover {
+      text-decoration: underline;
+    }
+
+    .service-block-text-mobile-works {
+      background: rgba(75, 75, 75, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0% 0% 0% 0%;
+      padding: 5%;
+      color: #ebebeb;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .triangle-l {
+      width: 0;
+      height: 0;
+      border-bottom: 25vh solid rgba(75, 75, 75, 0.5);
+      border-left: 25vh solid transparent;
+      margin-left: -75%;
+    }
+
+    .rectangle {
+      width: 50vw;
+      height: 25vh;
+      background: rgba(75, 75, 75, 0.5);
+    }
+
+    .google-maps-mobile {
+      display: flex;
+      height: 48vh;
+      width: 100vw;
+      margin-bottom: 8vh;
+      /* overflow: hidden; */
+      /* border: 8vh solid rgba(20, 20, 20, 0.5); */
+    }
+
+    .footer {
+      background-color: rgba(20, 20, 20, 0.8);
     }
   }
 }
