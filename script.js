@@ -347,11 +347,24 @@ const logoPreview = () => {
 	logo.style.animation = `logoIn 7s ease-in forwards`;
 }
 
+// const workLinksAnimation = () => {
+// 	const trianglel = document.querySelector('.triangle-l');
+// 	const serviceblocktextmobileworks = document.querySelector('.service-block-text-mobile-works');
+// 	const rectangle = document.querySelector('.rectangle');
+
+// 	serviceblocktextmobileworks.addEventListener('click', () => {
+// 		trianglel.style.animation = `work-links 0.5s ease forwards`;
+// 		serviceblocktextmobileworks.style.animation = `work-links 0.5s ease forwards`;
+// 		rectangle.style.animation = `work-links 0.5s ease forwards`;
+// })
+// }
+
 navSlide(); //invoke function
 linksPreview();
 partnershipsPreview();
 logoPreview();
 claimPreview();
+// workLinksAnimation()
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////// - GALLERY SECTION ANIMATION - ///////////////////////////////////////////////////////////
