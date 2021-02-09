@@ -16,7 +16,7 @@ nav {
 }
 
 body {
-  background: url("assets/black_bg.jpg") no-repeat fixed center;
+  background: url("assets/black_bg.jpg") no-repeat fixed cover;
 }
 
 a {
