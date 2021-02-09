@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+background: url("assets/black_bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -15,9 +21,9 @@ nav {
   background-color: rgba(20, 20, 20, 0.5);
 }
 
-body {
-  background: url("assets/black_bg.jpg") no-repeat fixed cover;
-}
+/*body {
+background: url("assets/black_bg.jpg") no-repeat fixed cover;
+}*/
 
 a {
   color: #ebebeb;
